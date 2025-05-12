@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     double num1, num2;
     char op;
 
@@ -9,37 +10,44 @@ int main() {
     cin >> num1;
 
     cout << "Pilih operator : \n";
-    cout << "	( + ) \n"; 
-    cout << "	( - ) \n"; 
-    cout << "	( x ) \n"; 
+    cout << "	( + ) \n";
+    cout << "	( - ) \n";
+    cout << "	( x ) \n";
     cout << "	( : ) \n";
-	cout << "Pilih : "; 
+    cout << "Pilih : ";
     cin >> op;
-    
 
     cout << "Masukkan angka kedua: ";
     cin >> num2;
 
-    if (op == '+') {
+    if (op == '+')
+    {
         cout << "Hasil: " << num1 + num2 << endl;
-    } 
-    else if (op == '-') {
+    }
+    else if (op == '-')
+    {
         cout << "Hasil: " << num1 - num2 << endl;
-    } 
-    else if (op == '*') {
+    }
+    else if (op == '*')
+    {
         cout << "Hasil: " << num1 * num2 << endl;
-    } 
-    else if (op == '/') {
-        if (num2 != 0) {
+    }
+    else if (op == '/')
+    {
+        if (num2 != 0)
+        {
             cout << "Hasil: " << num1 / num2 << endl;
-        } else {
+        }
+        else
+        {
             cout << "Error! Pembagian dengan nol." << endl;
         }
-    } 
-    else {
+    }
+    else
+    {
         cout << "Operator tidak valid!" << endl;
     }
+    cout << "Ini dari fitur 1" << endl;
 
     return 0;
 }
-
